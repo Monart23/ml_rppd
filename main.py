@@ -71,6 +71,9 @@ def plot_training_and_predictions(history, y_actual, y_predicted):
 
     plt.tight_layout()
     plt.show()
+    plt.savefig('training_and_predictions.png')
+    print("График сохранён в 'training_and_predictions.png'")
+
 
 def train_and_evaluate_model(model, X_train, y_train, X_test, y_test, save_path=None):
     """Обучение и оценка модели."""
